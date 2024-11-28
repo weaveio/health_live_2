@@ -206,7 +206,7 @@ const _$HealthDataUnitEnumMap = {
   HealthDataUnit.MILLIGRAM_PER_DECILITER: 'MILLIGRAM_PER_DECILITER',
   HealthDataUnit.UNKNOWN_UNIT: 'UNKNOWN_UNIT',
   HealthDataUnit.NO_UNIT: 'NO_UNIT',
-  HealthDataUnit.VO2MAX: 'VO2MAX_UNIT'
+  HealthDataUnit.VO2MAX: 'VO2MAX'
 };
 
 const _$HealthPlatformTypeEnumMap = {
