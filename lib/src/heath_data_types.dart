@@ -104,7 +104,10 @@ enum HealthDataType {
   ELECTROCARDIOGRAM,
 
   // Health Connect
-  TOTAL_CALORIES_BURNED
+  TOTAL_CALORIES_BURNED,
+
+  VO2MAX,
+  SLEEP_UNSPECIFIED
 }
 
 /// Access types for Health Data.
@@ -206,6 +209,7 @@ const List<HealthDataType> dataTypeKeysIOS = [
   HealthDataType.BIRTH_DATE,
   HealthDataType.BLOOD_TYPE,
   HealthDataType.MENSTRUATION_FLOW,
+  HealthDataType.VO2MAX,
 ];
 
 /// List of data types available on Android
@@ -243,6 +247,7 @@ const List<HealthDataType> dataTypeKeysAndroid = [
   HealthDataType.NUTRITION,
   HealthDataType.TOTAL_CALORIES_BURNED,
   HealthDataType.MENSTRUATION_FLOW,
+  HealthDataType.VO2MAX,
 ];
 
 /// Maps a [HealthDataType] to a [HealthDataUnit].
@@ -355,6 +360,9 @@ const Map<HealthDataType, HealthDataUnit> dataTypeToUnit = {
 
   // Health Connect
   HealthDataType.TOTAL_CALORIES_BURNED: HealthDataUnit.KILOCALORIE,
+
+  // added
+  HealthDataType.VO2MAX: HealthDataUnit.VO2MAX,
 };
 
 // const PlatformTypeJsonValue = {
@@ -441,6 +449,7 @@ enum HealthDataUnit {
   MILLIGRAM_PER_DECILITER,
   UNKNOWN_UNIT,
   NO_UNIT,
+  VO2MAX
 }
 
 /// List of [HealthWorkoutActivityType]s.
